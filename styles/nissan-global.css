@@ -49,8 +49,20 @@ header nav .section > div {
         flex-direction: column;
         justify-content: space-between;
 
+        @media (width < 768px) {
+
+            left: 0;
+            transform: unset;
+            bottom: 0;
+        }
+
         & h3 {
             margin: 70px 0 0 85px;
+
+            @media (width < 768px) {
+                margin-left: 30px;
+                text-align: left;
+            }
         }
 
         & p, & p:first-of-type {
@@ -66,6 +78,10 @@ header nav .section > div {
             min-height: 200px;
             font-size: var(--body-font-size-xs);
             background: linear-gradient(0deg, #000, #000 68%, rgba(0, 0, 0, 0.0001));
+            @media (width < 768px) {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
         }
     }
 }
@@ -86,6 +102,15 @@ header nav .section > div {
         max-width: unset;
         background: linear-gradient(0deg, #000, #000 68%, rgba(0, 0, 0, 0.0001));
         color: #fff;
+
+        @media (width < 768px) {
+            display: block;
+
+
+            left: 0;
+            transform: unset;
+            bottom: 0;
+        }
 
         & h1 {
             grid-area: price;
@@ -161,6 +186,11 @@ footer .footer {
             display: flex;
             flex-direction: row;
             align-items: start;
+
+            @media (width < 768px) {
+                flex-direction: column;
+            }
+
         }
 
         & h2 {
@@ -223,6 +253,10 @@ footer .footer {
 
             display: flex;
             gap: 15px;
+
+            @media (width < 768px) {
+                flex-direction: column;
+            }
 
             & > li {
                 font-weight: lighter;
@@ -375,12 +409,26 @@ main .section.nissan-faq-block {
     padding-bottom: 120px;
     box-sizing: border-box;
 
+    @media (width < 768px) {
+        padding-bottom: 60px;
+    }
+
     & h2 {
         padding: 80px 0;
         font-family: "Nissan Regular", Verdana, Arial, sans-serif;
         font-size: 68px;
         letter-spacing: 2.43px;
         line-height: 1.15;
+
+        @media (width < 768px) {
+            font-size: 25px;
+            letter-spacing: 1.5px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 40px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
         &::after {
             display: none;
@@ -429,3 +477,8 @@ body.no-scroll {
     background: transparent;
     color: #ffffff;
 }
+
+@media (width < 768px) {
+}
+
+
