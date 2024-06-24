@@ -65,7 +65,7 @@ header nav .section > div {
             }
         }
 
-        & p, & p:first-of-type {
+        & p:first-of-type {
 
             display: flex;
             flex-direction: column;
@@ -74,14 +74,25 @@ header nav .section > div {
             text-align: left;
             padding-right: 50%;
             padding-left: 85px;
+            padding-bottom: 30px;
             margin: 0;
             min-height: 200px;
-            font-size: var(--body-font-size-xs);
             background: linear-gradient(0deg, #000, #000 68%, rgba(0, 0, 0, 0.0001));
+
+            font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+            font-size: 18px;
+            line-height: 31px;
+            letter-spacing: 1.03px;
+
             @media (width < 768px) {
                 padding-right: 20px;
                 padding-left: 20px;
             }
+        }
+
+        .button-container {
+            margin: 0;
+            padding: 0;
         }
     }
 }
