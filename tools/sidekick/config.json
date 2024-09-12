@@ -2,6 +2,11 @@
     "project": "XSC Commerce Demo",
     "plugins": [
         {
+            "id": "newBtn",
+            "title": "Bulk Test",
+            "environments": ["admin"],
+        },
+        {
             "id": "library",
             "title": "Library",
             "environments": ["edit", "dev"],
