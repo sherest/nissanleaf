@@ -5,6 +5,7 @@
             "id": "newBtn",
             "title": "Bulk Test",
             "environments": ["admin"],
+            "event": "hello"
         },
         {
             "id": "library",
